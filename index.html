@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/index.css" />
+    
+    <title>Django commerce</title>
+  </head>
+  <body>
+    <header>
+      <p>Commerce Mart</p>
+    </header>
+    <nav>
+      <div class="nav">
+        <div class="nav-tab">
+          <li><a href="#intro">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#">Sign In</a></li>
+          <li><a href="#shop-cat">Shop with Category</a></li>
+        </div>
+        <div class="nav-btn">
+          <form action="" method="get">
+            <input type="text" name="search" id="search" placeholder="Search here . . . . .">
+            <button type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+
+    <main>
+      <!-- Introduction -->
+      <div class="img-wrapper" id="intro">
+        <img
+          src="https://images.pexels.com/photos/4429555/pexels-photo-4429555.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          alt=""
+        />
+      </div>
+
+
+      <!-- About -->
+
+      <div class="about-container" id="about">
+        <span id="counter" data-numer="2000">0+</span>
+        <p class="content-about">Lovely experiences and feedbacks</p> 
+        <div class="feature">
+          <div class="f1" style="background-image:url(https://images.unsplash.com/photo-1523966211575-eb4a01e7dd51?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y2FsbHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60) ;"><p> 24/7 Support</p></div>
+          <div class="f2" style="background-image:url(https://images.unsplash.com/photo-1584184924103-e310d9dc82fc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8dGFpbG9yfGVufDB8fDB8fHwy&auto=format&fit=crop&w=500&q=60) ;"><p>Premium Quality</p></div>
+          <div class="f3" style="background-image:url(https://images.unsplash.com/photo-1550490652-ce6a20d4ee76?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80) ;"><p>Reasonable Prices</p></div>
+        </div>
+      </div>
+
+
+      <!-- Shop By Category -->
+      <div class="shop-category" id="shop-cat">
+      <div class="heading">
+        <h1>Shop By Categories</h1>
+      </div>
+      <div class="categories">
+        <div onmouseover="blurInOne()" onmouseout="blurOutOne()">
+          <div class="each" id="one">
+            <div class="content">
+              <p id="title-content">Formals</p>
+              
+            </div>
+          </div>
+        </div>
+        <div onmouseover="blurInTwo()" onmouseout="blurOutTwo()">
+          <div class="each" id="two">
+            <div class="content">
+              <p id="title-content">Formals</p>
+              
+            </div>
+          </div>
+        </div>
+      <div onmouseover="blurInThree()" onmouseout="blurOutThree()">
+        <div class="each" id="three">
+          <div class="content">
+            <p id="title-content">Formals</p>
+            
+          </div>
+        </div>
+      </div>
+      <div onmouseover="blurInFour()" onmouseout="blurOutFour()">
+        <div class="each" id="four">
+          <div class="content">
+            <p id="title-content">Formals</p>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+
+
+<!-- Top Products -->
+      <div class="heading" id="top-products">
+        <h1 >Top Products</h1>
+        <p><a href=""> View More</a></p>
+      </div>
+      <div class="Products">
+        <div class="card-product">
+          <div
+            class="card-img"
+            id="card"
+            style="background-image:url('https://images.unsplash.com/photo-1637690048998-1e41c61c254d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGRyZXNzJTIwZm9ybWFsfGVufDB8fDB8fHwy&auto=format&fit=crop&w=500&q=60');"
+          ></div>
+          <div class="card-details" id="card-info">
+            <div class="detail-info">
+              <p id="name">
+                Lorem ipsum dolor sit amet consectetur adipiscing elit.
+              </p>
+              <p>Rs.<span>100</span></p>
+              <button class="btn">Add to cart</button>
+              <button class="btn">Pay Now</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-product">
+          <div
+            class="card-img"
+            id="card"
+            style="background-image:url('https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGRyZXNzJTIwZm9ybWFsfGVufDB8fDB8fHwy&auto=format&fit=crop&w=500&q=60');"
+          ></div>
+          <div class="card-details" id="card-info">
+            <div class="detail-info">
+              <p id="name">
+                Lorem ipsum dolor sit amet consectetur adipiscing elit.
+              </p>
+              <p>Rs.<span>100</span></p>
+              <button class="btn">Add to cart</button>
+              <button class="btn">Pay Now</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-product">
+          <div
+            class="card-img"
+            id="card"
+            style="background-image:url('https://images.unsplash.com/flagged/photo-1585052201332-b8c0ce30972f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=735&q=80');"
+          ></div>
+          <div class="card-details" id="card-info">
+            <div class="detail-info">
+              <p id="name">
+                Lorem ipsum dolor sit amet consectetur adipiscing elit.
+              </p>
+              <p>Rs.<span>100</span></p>
+              <button class="btn">Add to cart</button>
+              <button class="btn">Pay Now</button>
+            </div>
+          </div>
+        </div>
+  
+        <div class="card-product">
+          <div
+            class="card-img"
+            id="card"
+            style="background-image:url('https://images.unsplash.com/photo-1550639525-c97d455acf70?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8ZHJlc3N8ZW58MHx8MHx8fDI%3D&auto=format&fit=crop&w=500&q=60');"
+          ></div>
+          <div class="card-details" id="card-info">
+            <div class="detail-info">
+              <p id="name">
+                Lorem ipsum dolor sit amet consectetur adipiscing elit.
+              </p>
+              <p>Rs.<span>100</span></p>
+              <button class="btn">Add to cart</button>
+              <button class="btn">Pay Now</button>
+            </div>
+          </div>
+        </div>
+  
+        <div class="card-product">
+          <div 
+          class="card-img"
+          id="card"
+          style="background-image: url('https://images.unsplash.com/photo-1612722432474-b971cdcea546?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fGRyZXNzfGVufDB8fDB8fHwy&auto=format&fit=crop&w=500&q=60');"
+          ></div>
+          <div class="card-details" id="card-info">
+            <div class="detail-info">
+              <p id="name">
+                Lorem ipsum dolor sit amet consectetur adipiscing elit.
+              </p>
+              <p>Rs.<span>100</span></p>
+              <button class="btn">Add to cart</button>
+              <button class="btn">Pay Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      
+    </main>
+    <footer>
+      <div class="section-footer">
+        <h3>Links</h3>
+        <ul>
+          <li><a href="">Home</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Shop By Categories</a></li>
+          <li><a href="">Top products</a></li>
+          <li><a href="">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="section-footer">
+        <h3>Connect with us</h3>
+        <ul>
+          <ul>
+            <li><a href="">Facebook</a></li>
+            <li><a href="">Instagram</a></li>
+            <li><a href="">Twitter</a></li>
+          </ul>
+        </ul>
+      </div>
+      <div class="section-footer">
+        <h3>more...</h3>
+        <ul>
+          <li><a href="">Return A Product</a></li>
+        </ul>
+      </div>
+      
+    </footer>
+    <script src="js/index.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  </body>
+</html>

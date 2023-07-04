@@ -10,15 +10,14 @@
     <header>
       <p>Commerce Mart</p>
     </header>
-    <main>
     <nav>
       <div class="nav">
         <div class="nav-tab">
-          <li><a href="#intro">New</a></li>
-          <li><a href="#about">Men</a></li>
-          <li><a href="#">Women</a></li>
-          <li><a href="#shop-cat">Sales</a></li>
-          <li><a href="#shop-cat">Brands</a></li>
+          <li><a href="">New</a></li>
+          <li><a href="">Men</a></li>
+          <li><a href="">Women</a></li>
+          <li><a href="">Sales</a></li>
+          <li><a href="">Brands</a></li>
         </div>
         <div class="nav-btn">
           <form action="" method="get">
@@ -33,6 +32,8 @@
         </div>
       </div>
     </nav>
+    <main>
+    
     <div class="banner">
       <p>Products</p>
       <form action="">
@@ -45,9 +46,139 @@
       </form>
     </div>
     <div class="content-bars">
-      <div class="sidebar"></div>
+      <div class="sidebar">
+        <li><a href="" class="tab" onclick="expandTabWomen(); return false;">Women</a>
+          <div class="sub-types" id="wtype">
+            <ul>
+              <li><a href="">Formal</a></li>
+              <li><a href="">Dress</a></li>
+              <li><a href="">T shirts</a></li>
+              <li><a href="">Ethenic</a></li>
+            </ul>
+          </div>
+        
+        </li>
+          <li><a href="" class="tab" onclick="expandTabMen();return false">Men</a>
+            <div class="sub-types" id="mtype">
+              <ul>
+                <li><a href="">Formal</a></li>
+                <li><a href="">Dress</a></li>
+                <li><a href="">T shirts</a></li>
+                <li><a href="">Ethenic</a></li>
+              </ul>
+            </div>
+          </li>
+          <li><a href="" class="tab" onclick="expandTabKids();return false">kids</a>
+            <div class="sub-types" id="ktype">
+              <ul>
+                <li><a href="">Formal</a></li>
+                <li><a href="">Dress</a></li>
+                <li><a href="">T shirts</a></li>
+                <li><a href="">Ethenic</a></li>
+              </ul>
+            </div>
+          </li>
+          <li><a href="" class="tab" onclick="expandTabBrands();return false">Brands</a>
+            <div class="sub-types" id="btype">
+              <ul>
+                <li><a href="">Formal</a></li>
+                <li><a href="">Dress</a></li>
+                <li><a href="">T shirts</a></li>
+                <li><a href="">Ethenic</a></li>
+              </ul>
+            </div>
+          </li>
+          <li><a href="">New Arrival</a></li>
+          <li><a href="">Price</a></li>
+
+      </div>
       <div class="product-display">
       <div class="Products">
+        <div class="card-product">
+          <div
+            class="card-img"
+            id="card"
+            style="background-image:url('https://images.unsplash.com/photo-1637690048998-1e41c61c254d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGRyZXNzJTIwZm9ybWFsfGVufDB8fDB8fHwy&auto=format&fit=crop&w=500&q=60');"
+          ></div>
+          <div class="card-details" id="card-info">
+            <div class="detail-info">
+              <p id="name">
+                Lorem ipsum dolor sit amet consectetur adipiscing elit.
+              </p>
+              <p>Rs.<span>100</span></p>
+              <button class="btn">Add to cart</button>
+              <button class="btn">Pay Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="card-product">
+          <div
+            class="card-img"
+            id="card"
+            style="background-image:url('https://images.unsplash.com/photo-1637690048998-1e41c61c254d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGRyZXNzJTIwZm9ybWFsfGVufDB8fDB8fHwy&auto=format&fit=crop&w=500&q=60');"
+          ></div>
+          <div class="card-details" id="card-info">
+            <div class="detail-info">
+              <p id="name">
+                Lorem ipsum dolor sit amet consectetur adipiscing elit.
+              </p>
+              <p>Rs.<span>100</span></p>
+              <button class="btn">Add to cart</button>
+              <button class="btn">Pay Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="card-product">
+          <div
+            class="card-img"
+            id="card"
+            style="background-image:url('https://images.unsplash.com/photo-1637690048998-1e41c61c254d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGRyZXNzJTIwZm9ybWFsfGVufDB8fDB8fHwy&auto=format&fit=crop&w=500&q=60');"
+          ></div>
+          <div class="card-details" id="card-info">
+            <div class="detail-info">
+              <p id="name">
+                Lorem ipsum dolor sit amet consectetur adipiscing elit.
+              </p>
+              <p>Rs.<span>100</span></p>
+              <button class="btn">Add to cart</button>
+              <button class="btn">Pay Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="card-product">
+          <div
+            class="card-img"
+            id="card"
+            style="background-image:url('https://images.unsplash.com/photo-1637690048998-1e41c61c254d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGRyZXNzJTIwZm9ybWFsfGVufDB8fDB8fHwy&auto=format&fit=crop&w=500&q=60');"
+          ></div>
+          <div class="card-details" id="card-info">
+            <div class="detail-info">
+              <p id="name">
+                Lorem ipsum dolor sit amet consectetur adipiscing elit.
+              </p>
+              <p>Rs.<span>100</span></p>
+              <button class="btn">Add to cart</button>
+              <button class="btn">Pay Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="card-product">
+          <div
+            class="card-img"
+            id="card"
+            style="background-image:url('https://images.unsplash.com/photo-1637690048998-1e41c61c254d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGRyZXNzJTIwZm9ybWFsfGVufDB8fDB8fHwy&auto=format&fit=crop&w=500&q=60');"
+          ></div>
+          <div class="card-details" id="card-info">
+            <div class="detail-info">
+              <p id="name">
+                Lorem ipsum dolor sit amet consectetur adipiscing elit.
+              </p>
+              <p>Rs.<span>100</span></p>
+              <button class="btn">Add to cart</button>
+              <button class="btn">Pay Now</button>
+            </div>
+          </div>
+        </div>
         <div class="card-product">
           <div
             class="card-img"
@@ -170,4 +301,5 @@
     
   </footer>
   </body>
+  <script src="js/product.js"></script>
 </html>
